@@ -1,20 +1,30 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+name: User Story / Feature request
+about: Suggest a feature, user story, or development task
+title: "[Story] "
+labels: ["user-story"]
+assignees: []
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## User Story (Optional)
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+As a **[user role]**,
+I want to **[goal]**,
+so that **[benefit]**.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Description
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+Briefly describe the feature or task.
+
+## Acceptance Criteria
+
+- [ ] 
+
+## Tasks (Optional)
+
+- [ ]
+
+## Additional Context (Optional)
+
+Related requirements, mockups, or dependencies.

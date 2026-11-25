@@ -1,22 +1,41 @@
-This is a Kotlin Multiplatform project targeting Android, Web.
+# On Mind
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-    folder is the appropriate location.
+On Mind is a modular productivity application for personal organization and activity tracking. It follows a local-first approach and allows users to customize their experience through optional modules.
 
-### Running the apps
+Developed as part of the Mobile Software Engineering course at Technische Hochschule Mittelhessen (THM), Winter Semester 2026/27.
 
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and options:
+## Tech Stack
 
-- Android app: `./gradlew :androidApp:assembleDebug`
-- Web app:
-  - Wasm target (faster, modern browsers): `./gradlew :webApp:wasmJsBrowserDevelopmentRun`
-  - JS target (slower, supports older browsers): `./gradlew :webApp:jsBrowserDevelopmentRun`
+- Kotlin Multiplatform: Shared application logic for Android and Web
+- Compose Multiplatform: Cross-platform user interface
+- Room / SQLite: Local data persistence on Android)
+- Go / PostgreSQL: Backend and synchronization
+
+## Project Structure
+
+- ``androidApp/``: Android application entry point
+- ``shared/``: Shared UI and business logic
+- ``webApp/``: Web application entry point
+
+## Getting Started 
+
+Open the project in Android Studio and let Gradle synchronize.
+
+**Android build:**
+
+````bash
+./gradlew :androidApp:assembleDebug
+````
+
+
+**Web (Wasm):**
+
+````bash
+./gradlew :webApp:wasmJsBrowserDevelopmentRun
+````
+
+
+On Windows, use .\gradlew.bat instead of ./gradlew.
 
 ### Running tests
 
